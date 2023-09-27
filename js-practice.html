@@ -13,21 +13,29 @@
     console.log("Let's do math:");
     let x = 5;
     console.log(x);
+
     let y = 3;
     console.log(y);
+
     let z = x * y;
     console.log(z);
+
     // Math on my own
     let a = 2
     console.log(a);
+
     let b = 7
     console.log(b);
+
     let c = a + b;
     console.log(c);
+
     let d = a - b;
     console.log(d);
+
     let e = b / a;
     console.log(e);
+
     // Practicing strings
     console.log("Working with strings:");
     let firstName = 'Athena';
@@ -35,10 +43,67 @@
     let lastName = 'Hawkins';
     let name = firstName + " " + middleName + " " + lastName;
     console.log(name)
+
     // Strings on my own
     let greeting = 'My name is' + " " + name;
     console.log(greeting)
 
+    //Using functions example
+    /*
+    If you had a function that took two arguments and returned their difference ...
+    */
+    function subtractionMachine(argument1, argument2) {
+      let newValue = argument1 - argument2;
+      return newValue;
+    }
+
+    /*
+    We can create a variable "difference" and set it to the result or "return"
+    of the subtractionMachine function. In this case below, we are giving the
+    subractionMachine the "arguments" of 5 and 3.
+    */
+    let difference = subtractionMachine(5, 3);
+
+    /*
+    You can the log the function's value by logging the variable ...
+    */
+    console.log(difference);
+
+    /*
+    If I didn't want to create a variable first, I can 
+    log the returned value directly:
+    */
+    console.log(subtractionMachine(5, 3));
+
+    //Using functions log
+    console.log("Using functions:");
+
+    // function to make square numbers using math object
+    function makeSquare(theNumb) {
+      let squared = Math.pow(theNumb, 2);
+      return squared;
+    }
+    let try01 = makeSquare(3);
+    console.log(try01);
+    let try02 = makeSquare(5);
+    console.log(try02);
+    let try03 = makeSquare(12345876)
+    console.log(try03);
+
+    //Functions on my own
+    function makeName (firstName, middleName, lastName) {
+      let wholeName = firstName + " " + middleName + " " + lastName;
+      return wholeName;
+    }
+    makeName01 = makeName('Athena', 'Foteini', 'Hawkins');
+    console.log(makeName01);
+    makeName02 = makeName('Robert', '\"Beto\"', 'O\'Rourke');
+    console.log(makeName02);
+    makeName03 = makeName('Dina', 'Foteini', 'Baskar');
+    console.log(makeName03);
+
+    
+    
   </script>
 </body>
 </html>
