@@ -13,26 +13,20 @@
     console.log("Let's do math:");
     let x = 5;
     console.log(x);
-
     let y = 3;
     console.log(y);
-
     let z = x * y;
     console.log(z);
 
     // Math on my own
     let a = 2
     console.log(a);
-
     let b = 7
     console.log(b);
-
     let c = a + b;
     console.log(c);
-
     let d = a - b;
     console.log(d);
-
     let e = b / a;
     console.log(e);
 
@@ -47,33 +41,6 @@
     // Strings on my own
     let greeting = 'My name is' + " " + name;
     console.log(greeting)
-
-    //Using functions example
-    /*
-    If you had a function that took two arguments and returned their difference ...
-    */
-    function subtractionMachine(argument1, argument2) {
-      let newValue = argument1 - argument2;
-      return newValue;
-    }
-
-    /*
-    We can create a variable "difference" and set it to the result or "return"
-    of the subtractionMachine function. In this case below, we are giving the
-    subractionMachine the "arguments" of 5 and 3.
-    */
-    let difference = subtractionMachine(5, 3);
-
-    /*
-    You can the log the function's value by logging the variable ...
-    */
-    console.log(difference);
-
-    /*
-    If I didn't want to create a variable first, I can 
-    log the returned value directly:
-    */
-    console.log(subtractionMachine(5, 3));
 
     //Using functions log
     console.log("Using functions:");
@@ -102,8 +69,37 @@
     makeName03 = makeName('Dina', 'Foteini', 'Baskar');
     console.log(makeName03);
 
-    
-    
+    //Middile initial practice
+    console.log("Making a better name function:")
+    // A better name function to fix middle initials
+    // Make a name with middle initial
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        // adding and updating here
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
+    }
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+    console.log(makeBetterName("Franklin", "D", "Roosevelt"));
+
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return "Home team wins!";
+      }
+      else if (home === away) {
+        return "It was a tie"
+      }
+      else {
+        return "Away team wins :("
+      }
+    }
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3,5));
+    console.log(scoreCompare(0,0));
   </script>
 </body>
 </html>
